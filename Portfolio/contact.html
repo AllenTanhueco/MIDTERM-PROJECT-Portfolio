@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website showcasing my projects, about me, and contact details. Includes a downloadable PDF resume.">
+  <meta name="author" content="Tanhueco, Allen Carl M.">
+  <meta name="keywords" content="portfolio, web development, resume, projects">
+  <link href="styles.css" rel="stylesheet">
+  <title>Portfolio | Tanhueco, Allen Carl M.</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="navbar bg-white py-4 shadow-md">
+    <div class="container mx-auto flex flex-col items-center">
+      <div class="logo-container flex items-center space-x-4">
+        <img src="images/selfbrand-logo.jpg" alt="Logo Left" class="logo w-16 h-16 rounded-full border-2 border-gray-300">
+        <a href="index.html" class="brand text-2xl font-bold text-gray-900">Tanhueco, Allen Carl M.</a>
+        <img src="images/selfbrand-logo.jpg" alt="Logo Right" class="logo w-16 h-16 rounded-full border-2 border-gray-300">
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links flex space-x-6 mt-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="projects.html" class="text-gray-700 hover:text-blue-600 font-medium">Projects</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contact" class="container mx-auto my-10">
+    <h2 class="section-title">Contact Me</h2>
+    
+    <p><strong>Email: 
+      <a href="mailto:allentanhueco420@gmail.com" class="email-link">
+        allentanhueco420@gmail.com </a></strong></p>
+    
+    <p class="contact-number">Contact Number: 
+      <a href="tel:+639261811700">+63 926 181 1700</a>
+    </p>
+  
+    <div class="social-links">
+      <a href="https://www.facebook.com/AllenCarl.Tanhueco" target="_blank">
+        <img src="images/facebook-icon.jpg" alt="Facebook">
+        <span>Allen Carl Tanhueco</span> </a>
+    </div>
+    <div class="contact-form-container">
+      <h2>Send me a message</h2>
+      <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type Your Message" required></textarea>
+  
+          <button type="submit">Send Message</button>
+          <p id="formStatus"></p>
+      </form>
+  </div>
+  <footer>
+    <p class="text-sm mt-4">&copy; 2025 Tanhueco, Allen Carl M. All Rights Reserved.</p>
+    </footer>
+  </main>

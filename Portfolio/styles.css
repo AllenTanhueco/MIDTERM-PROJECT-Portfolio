@@ -1,0 +1,568 @@
+/* General Styles */
+body {
+  background-color: #8fe8f8;
+  color: #1a202c;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for the main container */
+#home {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the main title */
+.main-title {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #2c3e50; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .main-title {
+      font-size: 2.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+      font-size: 2rem; 
+  }
+}
+
+
+/* Container for Profile Image and Summary */
+.profile-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  max-width: 900px;
+  margin: 20px auto; 
+  text-align: left; 
+}
+
+/* Styling for the Profile Image */
+.profile-container img {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%;
+  border: 4px solid #111111; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  object-fit: cover; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Subtitle / Summary Styling */
+.subtitle {
+  font-size: 500px;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.6;
+  max-width: 900px; 
+  background-color: #f9f9f9;
+  border-left: 5px solid #1877F2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.subtitle:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design - Stack on small screens */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; 
+    text-align: center; 
+  }
+}
+
+/* Navbar */
+.navbar {
+background-color: grey;
+color: #ffffff;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+/* Logo Container */
+.logo-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+
+/* Logo Styling */
+.logo {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid white;
+}
+
+/* Centering brand name */
+.navbar .brand {
+font-size: 2rem;
+font-weight: bold;
+text-decoration: none;
+color: #ffffff;
+margin-bottom: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+display: flex;
+justify-content: center;
+gap: 2rem; 
+}
+
+.nav-links a {
+text-decoration: none;
+color: #ffffff;
+font-size: 1.2rem;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #f8f8f8;
+text-decoration: underline;
+}
+
+/* Home Page */
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+}
+
+/* Projects Page */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Grid for Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #4a5568;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1877F2;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #135bb8;
+  }
+  .project-link {
+    text-decoration: none !important; 
+    color: black; 
+  }
+  
+  .project-link:hover {
+    color: #1877F2; 
+  }
+
+
+  .drive-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4285F4; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .drive-button:hover {
+    background-color: #357ae8;
+  }
+  
+
+/* About Page */
+.about-text {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.75rem;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #1877F2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle / Summary Styling */
+.subtitle {
+  font-size: 1.5rem; 
+  font-weight: 500;
+  color: #444;
+  line-height: 1.6;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #1877F2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.subtitle:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design - Stack on small screens */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Skills Section */
+.skills-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-container ul li {
+  background-color: #f8f9fa;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-left: 5px solid #1877F2;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #333;
+  transition: background 0.3s ease-in-out;
+}
+
+.skills-container ul li:hover {
+  background-color: #e3f2fd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 15px;
+  }
+  .skills-container h2 {
+    font-size: 1.5rem;
+  }
+  .skills-container ul li {
+    font-size: 1rem;
+  }
+}
+
+
+/* Contact Page */
+.email-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Resume Download Button */
+.resume-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.resume-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+
+
+/* Contact Section Styling */
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Email Link Styling */
+.email-link {
+  font-size: 18px;
+  color: #1877F2; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #0d65d9; 
+}
+
+/* Resume Download Button */
+.resume-container {
+  margin-top: 15px;
+}
+
+.resume-container a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1877F2;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.resume-container a:hover {
+  background-color: #0d65d9;
+}
+
+/* Contact Number Styling */
+.contact-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-number a {
+  color: #1877F2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-number a:hover {
+  text-decoration: underline;
+  color: #0d65d9;
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.05);
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1877F2;
+}
+
+.social-links span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1877F2;
+  margin-left: 8px;
+}
+
+.social-links a:hover span {
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.contact-form-container label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form-container textarea {
+  resize: vertical;
+}
+
+.contact-form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #1877F2;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Status Message */
+#formStatus {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
